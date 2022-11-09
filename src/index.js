@@ -1,13 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router } from "react-router-dom";
+import { AuthProviderWrapper } from "./components/Context/Auth.context";
+import { FavoriteProviderWrapper } from "./components/Context/Favorite.context";
+import AppThemeProvider from "./themes/AppThemeProvider";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// STYLE
+
+import "./index.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppThemeProvider>
+      <Router>
+        <AuthProviderWrapper>
+          <FavoriteProviderWrapper>
+            <App />
+          </FavoriteProviderWrapper>
+        </AuthProviderWrapper>
+      </Router>
+    </AppThemeProvider>
   </React.StrictMode>
 );
 

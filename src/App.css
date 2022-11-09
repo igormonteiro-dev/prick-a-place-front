@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+.MuiTab-root.Mui-selected {
+  color: #ff395c !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MuiTabs-indicator {
+  display: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-size: 0.5rem;
+}
+
+.css-1hqhqnd-MuiTabs-indicator {
+  display: none;
+}
+
+.css-1lag5c4-MuiButtonBase-root-MuiTab-root {
+  justify-content: end;
+}
+
+.css-1s6uyno {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.css-1yvkr80-MuiTabs-root .MuiTabs-scrollButtons {
+  display: "none";
+}
+
+/* label {
+  position: absolute;
+  left: -100vw;
+} */
+
+/* input,
+textarea {
+  display: block;
+} */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flexContainer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-container {
+  width: auto;
+  height: 200px;
 }
