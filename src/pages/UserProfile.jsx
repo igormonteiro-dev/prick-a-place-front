@@ -59,12 +59,12 @@ export default function BasicTabs() {
             scrollButtons="auto"
           >
             <Tab
-              label="Account info"
+              label="Favorites"
               {...a11yProps(0)}
               sx={{ fontSize: "1rem", color: "#404040" }}
             />
             <Tab
-              label="Favorites"
+              label="Account info"
               {...a11yProps(1)}
               sx={{ fontSize: "1rem", color: "#404040" }}
             />
@@ -76,10 +76,10 @@ export default function BasicTabs() {
           </Tabs>
         </Box>
         <UserProfile value={value} index={0}>
-          <AuthorPage />
+          <Favorites />
         </UserProfile>
         <UserProfile value={value} index={1}>
-          <Favorites />
+          <AuthorPage />
         </UserProfile>
         <UserProfile value={value} index={2}>
           Item Three

@@ -7,6 +7,7 @@ import Paper from "@mui/material/Paper";
 import { Avatar, Button, TextareaAutosize, Typography } from "@mui/material";
 import { flexCenter } from "../../themes/commonStyles";
 import DeleteIcon from "@mui/icons-material/Delete";
+import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import EditIcon from "@mui/icons-material/Edit";
 
 import axios from "axios";
@@ -84,12 +85,6 @@ export default function Comment({ comment, author }) {
                     value={state}
                     onChange={(e) => setState(e.target.value)}
                   />
-
-                  {/* <input
-                    type="text"
-                    value={state}
-                    onChange={(e) => setState(e.target.value)}
-                  /> */}
                   <Button
                     sx={[
                       {
@@ -116,12 +111,11 @@ export default function Comment({ comment, author }) {
               ) : (
                 <>
                   <Typography>{state}</Typography>
-                  <Typography sx={{ ml: 5 }}>{author?.createdAt}</Typography>
                 </>
               )}
               {isSameUser && (
                 <>
-                  <DeleteIcon
+                  <DeleteOutlineIcon
                     sx={{ ml: 5, fontSize: "20px", color: "primary.main" }}
                     onClick={() => handleDelete(!showInput)}
                   />

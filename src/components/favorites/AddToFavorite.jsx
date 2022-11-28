@@ -22,7 +22,7 @@ export function AddToFavorite() {
             px: 2,
             py: 1,
             minWidth: 90,
-            fontSize: ".9rem",
+            fontSize: "1rem",
             borderRadius: 3,
             border: "1px solid",
             borderColor: "white",
@@ -42,7 +42,7 @@ export function AddToFavorite() {
         onClick={() => deleteFavorite(favorite._id)}
       >
         <FavoriteIcon style={{ fontSize: "30px" }} />
-        <Typography sx={{ ml: "10px", fontSize: "0.8rem" }}>
+        <Typography sx={{ ml: "10px", fontSize: "1rem" }}>
           I love it!
         </Typography>
       </Button>
@@ -56,7 +56,7 @@ export function AddToFavorite() {
           px: 2,
           py: 1,
           minWidth: 90,
-          fontSize: ".9rem",
+          fontSize: "1rem",
           borderRadius: 3,
           border: "1px solid",
           borderColor: "white",
@@ -76,7 +76,7 @@ export function AddToFavorite() {
       onClick={() => addToFavorites(placeId)}
     >
       <FaRegHeart style={{ fontSize: "30px" }} />
-      <Typography sx={{ ml: "10px", fontSize: "0.8rem" }}>
+      <Typography sx={{ ml: "10px", fontSize: "1rem" }}>
         Add to favorite
       </Typography>
     </Button>

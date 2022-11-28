@@ -23,18 +23,30 @@ export default function ButtonLogin() {
   return (
     <div>
       <Button
+        variant="outlined"
         onClick={handleOpenLogin}
         sx={[
           {
-            px: 2,
-            py: 1,
-            minWidth: 90,
+            px: "15px",
+            py: "7px",
+            mr: 1,
+            borderRadius: 0,
             fontSize: ".9rem",
             color: "#303030",
+            fontFamily: "Open Sans",
+            fontWeight: 400,
+            opacity: 0.6,
+          },
+          {
+            "&:hover": {
+              backgroundColor: "#fff",
+
+              opacity: 0.9,
+            },
           },
         ]}
       >
-        Login
+        LOGIN
       </Button>
       <Dialog
         fullScreen={fullScreen}

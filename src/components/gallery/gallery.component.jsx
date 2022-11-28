@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { BASE_URL } from "../../consts";
+import PlaceIcon from "@mui/icons-material/Place";
 
 export default function Gallery({ filter }) {
   const [places, setPlaces] = useState([]);
@@ -58,12 +59,10 @@ export default function Gallery({ filter }) {
                     <h3 className="text-sm font-semibold text-gray-700">
                       <a href={`/places/${place._id}`}>
                         <span aria-hidden="true" className="absolute inset-0" />
-                        {place.name}
+                        <PlaceIcon sx={{ color: "#ff395c" }} />
+                        {place.name}, {place.zipCode}
                       </a>
                     </h3>
-                    <p className="mt-1 text-sm text-gray-500">
-                      {place.zipCode}
-                    </p>
                   </div>
                 </div>
               </div>

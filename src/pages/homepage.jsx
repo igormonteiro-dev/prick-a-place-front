@@ -13,11 +13,12 @@ export default function Homepage() {
           <SectionHero />
           {/* <Header /> */}
         </div>
-
         <TabBar filter={filter} setFilter={setFilter} />
-        <container className="container mx-auto">
-          <Gallery filter={filter} />
-        </container>
+        <div>
+          <container className="container mx-auto ">
+            <Gallery filter={filter} />
+          </container>
+        </div>
       </div>
     </>
   );

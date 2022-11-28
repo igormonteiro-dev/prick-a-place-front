@@ -26,24 +26,26 @@ export default function ButtonSignUp() {
         onClick={handleOpenSignup}
         sx={[
           {
-            px: 2,
-            py: 1,
-            minWidth: 90,
-            color: "#FFF",
+            px: "15px",
+            py: "8px",
+
+            color: "#303030",
             fontSize: ".9rem",
-            fontWeight: "600",
-            borderRadius: 2,
+            fontWeight: "400",
+            borderRadius: 0,
             backgroundColor: "#ff395c",
+            fontFamily: "Open Sans",
           },
           {
             "&:hover": {
-              backgroundColor: "#ff395c",
+              backgroundColor: "#303030",
+              color: "white",
               opacity: 0.9,
             },
           },
         ]}
       >
-        Sign up
+        SIGN UP
       </Button>
       <Dialog
         fullScreen={fullScreen}

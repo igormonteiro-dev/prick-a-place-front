@@ -4,9 +4,10 @@ import NavBar from "./components/navbar/NavBar";
 import "./index.css";
 import Homepage from "./pages/homepage";
 import AppThemeProvider from "./themes/AppThemeProvider";
-import PlaceDetail from "./pages/PlaceDetail";
+// import PlaceDetail from "./pages/PlaceDetail";
 import UserProfile from "./pages/UserProfile";
 import Footer from "./components/footer/Footer";
+import PlaceDet from "./pages/placedet";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/places/:id" element={<PlaceDetail />} />
+          <Route path="/places/:id" element={<PlaceDet />} />
           <Route path="/user" element={<UserProfile />} />
         </Routes>
         <Footer />

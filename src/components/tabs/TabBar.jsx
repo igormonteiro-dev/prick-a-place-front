@@ -26,7 +26,7 @@ export default function TabBar({ filter, setFilter }) {
 
   return (
     <Container maxWidth="xl" disableGutters={true}>
-      <div className="flex flex-grow:1 pb-5 justify-center">
+      <div className="flex flex-grow:1 justify-center">
         <Tabs
           value={value}
           onChange={handleChange}
@@ -34,13 +34,12 @@ export default function TabBar({ filter, setFilter }) {
           visibleScrollbar={false}
           scrollButtons
           sx={{
-            backgroundColor: "#fff",
-            boxShadow: 5,
-            borderRadius: { md: 50, lg: 50, xl: 50 },
-            color: "#383838",
-            mt: { xs: 5, sm: 5, md: 5, lg: -8, xl: -8 },
+            backgroundColor: "#f7f5ef",
+            color: "white",
+            borderRadius: { md: 10, lg: 10, xl: 10 },
+            mt: { xs: 5, sm: 5, md: 5, lg: -6, xl: -8 },
             zIndex: 1000,
-            mb: 5,
+            mb: 3,
           }}
         >
           <Tab

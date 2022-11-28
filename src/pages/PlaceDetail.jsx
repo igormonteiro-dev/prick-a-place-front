@@ -26,10 +26,10 @@ export default function PlaceDetail() {
     <>
       <HeroDetail />
       <div className="container mx-auto content-center">
-        <main className="container relative z-10 mt-11 flex flex-col lg:flex-row ">
+        <main className="container relative z-10 mt-12 flex flex-col lg:flex-row ">
           <div className="w-full lg:w-5/2 xl:w-3/2 space-y-8 lg:space-y-10 lg:pr-6">
             {/* CONTENT */}
-            <div className="w-full flex flex-col sm:rounded-2xl border-b sm:border-t sm:border-l sm:border-r border-neutral-200 dark:border-neutral-700 space-y-4 sm:space-y-4 pb-6 px-0 sm:p-4 xl:p-6">
+            <div className=" w-full flex flex-col sm:rounded-2xl border-b sm:border-t sm:border-l sm:border-r border-neutral-200 dark:border-neutral-700 space-y-4 sm:space-y-4 pb-6 px-0 sm:p-4 xl:p-6 bg-white">
               <h2 className="text-2xl pt-2 font-semibold">About</h2>
               <div className="w-14 border-b border-neutral-200 dark:border-neutral-700 pb-30"></div>
               <div className="text-neutral-6000 dark:text-neutral-300">

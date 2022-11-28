@@ -26,27 +26,28 @@ export default function NavBar() {
         position="relative"
         sx={{
           bgcolor: "white",
-          minHeight: 80,
+          minHeight: 70,
         }}
       >
         <Container maxWidth="xl">
           <Toolbar
-            sx={{ borderBottom: 1, borderColor: "#f4f5f5", pb: 2, pt: 2 }}
+            sx={{ borderBottom: 1, borderColor: "#f4f5f5", pb: 1, pt: 1 }}
           >
             <Link to="/" style={{ textDecoration: "none" }}>
-              <img src={Logo} alt="logo" style={{ width: "60px", mr: 2 }} />
+              <img src={Logo} alt="logo" style={{ width: "70px", mr: 2 }} />
             </Link>
             <Typography
               sx={{
                 mr: 2,
                 display: { xs: "none", sm: "block" },
-                fontSize: "22px",
-                fontWeight: 800,
+                fontSize: "28px",
+                fontWeight: 300,
                 color: "primary.main",
                 textDecoration: "none",
+                fontFamily: "Fredoka",
               }}
             >
-              Pick a place
+              Pick a Place
             </Typography>
             <Box sx={{ flexGrow: 1 }} />
             <Box sx={{ flexGrow: 1 }} />
